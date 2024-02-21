@@ -22,3 +22,7 @@
 
 ### create super user
     docker-compose run --rm app sh -c "python manage.py createsuperuser"
+
+
+### openapi swagger 
+    http://localhost:8000/api/docs/
