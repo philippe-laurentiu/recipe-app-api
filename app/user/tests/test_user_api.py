@@ -37,8 +37,8 @@ class PublicUserApiTests(TestCase):
             'password': 'testpass123',
             'name': 'Test Name',
         }
-        create_user(**payload)
-        res = self.client(CREATE_USER_URL, payload)
+        get_user_model().objects.create(**payload)
+        res = self.client.post(CREATE_USER_URL)
 
         self.assertEqual(res.status_code, status.HTTP_400_BAD_REQUEST)
 
