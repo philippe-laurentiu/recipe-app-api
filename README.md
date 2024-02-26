@@ -1,3 +1,5 @@
+# base setup with user and token auth fully tested
+
 ## comands
 
 ### run flake8 linting
