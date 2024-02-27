@@ -14,6 +14,9 @@
 
     docker-compose run --rm app sh -c "python manage.py migrate"
 
+### make new app
+    docker-compose run --rm app sh -c "python manage.py startapp appname"
+
 
 ### clear docker volume (clears database)
     docker volume ls
