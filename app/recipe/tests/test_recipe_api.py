@@ -1,7 +1,6 @@
 """
 Tests for recipe APIs.
 """
-import logging
 
 from decimal import Decimal
 
